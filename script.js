@@ -30,5 +30,3 @@ const fetchData = async function () {
     console.log(err);
   }
 };
-
-fetchData();
