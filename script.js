@@ -20,7 +20,7 @@ const fetchData = async function () {
       //console.log("secces", data);
       result.innerHTML = "";
       data.forEach((el) => {
-        const markup = `<span class="inforesult">${el.name}  <span>${el.forks} /  ${el.visibility} / ${el.id} / <a href=${el.html_url}>Visit</a></span></span>`;
+        const markup = `<span class="inforesult">${el.name}  <span>${el.stargazers_count} / ${el.forks} /  ${el.visibility} / ${el.id} / <a href=${el.html_url}>Visit</a></span></span>`;
         result.insertAdjacentHTML("beforebegin", markup);
       });
     } else {
